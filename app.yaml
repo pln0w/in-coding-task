@@ -1,0 +1,5 @@
+runtime: go112
+
+main: ./main.go
+entrypoint: ./main
+

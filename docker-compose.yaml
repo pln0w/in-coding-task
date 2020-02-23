@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  webservice:
+    container_name: task
+    image: task:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ".:/go/src/server"
