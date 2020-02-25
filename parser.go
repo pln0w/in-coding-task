@@ -10,9 +10,8 @@ import (
 	"sync"
 )
 
+// APIURL constant API url getting routes informations
 const APIURL = "http://router.project-osrm.org/route/v1/driving/%s;%s?overview=false"
-
-var mutex sync.Mutex
 
 // Point structure used for keeping single coordinates variable
 type Point struct {
